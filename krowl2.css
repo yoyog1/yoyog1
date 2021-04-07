@@ -32,13 +32,12 @@ html {
 body {
   width: 100%;
   height: auto;
-  background-image: url(../VSCode/images/bg-content.jpg);
 }
 
 header {
   height: 540px;
   width: 100%;
-  background-image: url(./images/bg-main_visual.jpg);
+  background-image: url(bg-main_visual.jpg);
   background-size: cover;
 }
 
@@ -76,12 +75,13 @@ main section.introduction {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #fff;
 }
 
 main section.service {
   height: auto;
   width: 100%;
-  background-image: url(./images/bg-content@2x.jpg);
+  background-image: url(bg-content@2x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
