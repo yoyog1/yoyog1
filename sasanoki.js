@@ -62,6 +62,26 @@ $(function(){
         $(this).html('佐々ノ木のマイウェイ…')
     });
 
+    //ヘッダーメニュー
+    $('.menu-icon').click(function(){
+        if( $(this).hasClass('open') ){
+            //開いてる×
+            $(this).removeClass('open').find('#bar').css('display','block');
+            $('#time').css('display','none');
+
+            $('.header-nav').css('display','none');
+
+        }else{
+            //閉まってる三
+            $(this).addClass('open').find('#time').css('display','block');
+            $('#bar').css('display','none');
+
+            $('.header-nav').css('display','flex');
+            
+        };
+
+    });
+    $
 
 
     //アバウト
