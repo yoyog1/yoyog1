@@ -64,25 +64,36 @@ $(function(){
 
     //ヘッダーメニュー
     $('.menu-icon').click(function(){
-        if( $(this).hasClass('open') ){
+        if($(this).hasClass('open')) {
             //開いてる×
             $(this).removeClass('open').find('#bar').css('display','block');
             $('#time').css('display','none');
 
-            $('.header-nav').css('display','none');
+            $('.header-nav').slideUp();
 
         }else{
             //閉まってる三
             $(this).addClass('open').find('#time').css('display','block');
             $('#bar').css('display','none');
 
-            $('.header-nav').css('display','flex');
+            $(function () {
             
+                $('.header-nav').slideDown();
+                $('.header-nav').css('display','flex');
+                
+            });
         };
 
     });
-    $
+    media();
+$(window).on("resize", function(){ media(); });
 
+
+function media() {
+    if($(window).width()>550){
+        $('.header-nav').show();
+    }
+}
 
     //アバウト
     $('.about-img img').hover(
