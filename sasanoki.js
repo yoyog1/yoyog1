@@ -15,7 +15,7 @@ $(function(){
         var $scrollid=$(this).attr('href');
         var $position=$($scrollid).offset().top;
 
-        $('html,body').animate({'scrollTop':$position},500);
+        $('html,body').animate({'scrollTop':$position},1000);
     });
 
     $('#nav1').hover(
@@ -98,7 +98,7 @@ function media() {
     //アバウト
     $('.about-img img').hover(
         function(){
-            $(this).animate({'height':'180px','width':'180px'});
+            $(this).animate({'height':'220px','width':'220px'});
         },
         function(){
             $(this).animate({'height':'160px','width':'160px'});
@@ -133,9 +133,9 @@ function media() {
     });
     $('.close-btn').hover(
         function(){
-            $(this).animate({'font-size':'35px'},500);
+            $(this).animate({'font-size':'32px'},500);
         },function(){
-            $(this).animate({'font-size':'20px'},500);
+            $(this).animate({'font-size':'30px'},500);
         }
 
 
