@@ -1,8 +1,8 @@
 $(function(){   
     
-    $('.c1').hover(
+    $('.c2').hover(
         function(){
-            $('.c2').show();
+            $('.c3').show();
         }
 
     );
