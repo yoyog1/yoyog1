@@ -262,10 +262,10 @@ html body .WORKS ul {
 
 html body .WORKS ul li {
   padding: 0 10px 50px 10px;
-  width: 80%;
+  width: 65%;
 }
 
-html body .WORKS ul li.c2, html body .WORKS ul li.c3 {
+ html body .WORKS ul li.c3 {
   display: none;
 }
 
