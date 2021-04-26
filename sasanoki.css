@@ -262,10 +262,21 @@ html body .WORKS ul {
 
 html body .WORKS ul li {
   padding: 0 10px 50px 10px;
-  width: 65%;
 }
 
- html body .WORKS ul li.c3 {
+@media (min-width: 1025px) {
+  html body .WORKS ul li {
+    width: 30%;
+  }
+}
+
+@media (max-width: 1024px) {
+  html body .WORKS ul li {
+    width: 70%;
+  }
+}
+
+html body .WORKS ul li.c3 {
   display: none;
 }
 
